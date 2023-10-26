@@ -6,4 +6,4 @@ elif perev == 'F' or perev == 'f':
     temp = int(input("Enter the temperature in Fahrenheit: "))
     print((temp -32) * 5 / 9, "C")
 else:
-    print("Enter another number")
+    print("Enter C (Celsius) or F (Fahrenheit)")
