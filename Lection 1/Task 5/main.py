@@ -1,21 +1,19 @@
-import math
 import cmath
 
-fir = int(input("Enter walue a: "))
-sec = int(input("Enter walue b: "))
-thi = int(input("Enter walue c: "))
+def line():
+    print("="*14)
+    
+print("b^2 - 4 * a * c")
+line()
+a = int(input("Enter walue a: "))
+b = int(input("Enter walue b: "))
+c = int(input("Enter walue c: "))
+line()
+D = b ** 2 - 4 * a * c
+print ("Discriminant = ", D)
 
-D = sec ** 2 - 4 * fir * thi
-
-print("Discriminant = ", D)
-if D > 0:
-    xf = ((-sec + math.sqrt(D)) / (2 * fir))
-    xs = ((-sec - math.sqrt(D)) / (2 * fir))
-    print("x1 = ", xf,  "\nx2 = ", xs)
-elif D == 0:
-    xf = ((-sec) / (2 * fir))
-    print("x1 = ", xf)
-elif D < 0:
-    xf = ((-sec + cmath.sqrt(D)) / (2 * fir))
-    xs = ((-sec - cmath.sqrt(D)) / (2 * fir))
-    print("x1 = ", xf,  "\nx2 = ", xs)
+xf = ((-b + cmath.sqrt(D)) / (2 * a))
+xs = ((-b - cmath.sqrt(D)) / (2 * a))
+xf = xf.real
+xs = xs.real
+print("x1 = ", xf,  "\nx2 = ", xs)
