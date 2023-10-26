@@ -13,7 +13,7 @@ def fulfillment(operation, a, b):
         case "degree":
             print(a ** b)
         case "root":
-            print(math.sqrt(a))
+            print(a ** (1 / b))
 
 opera = input("What operation do you want to do?  +, -, *. /, root, degree?: ")
 fir = int(input("Enter first walue: "))
