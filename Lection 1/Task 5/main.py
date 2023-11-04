@@ -12,8 +12,8 @@ line()
 D = b ** 2 - 4 * a * c
 print ("Discriminant = ", D)
 
-xf = ((-b + cmath.sqrt(D)) / (2 * a))
-xs = ((-b - cmath.sqrt(D)) / (2 * a))
-xf = xf.real
-xs = xs.real
-print("x1 = ", xf,  "\nx2 = ", xs)
+FirstAnswer = ((-b + cmath.sqrt(D)) / (2 * a))
+SecondAnswer = ((-b - cmath.sqrt(D)) / (2 * a))
+FirstAnswer = FirstAnswer.real
+xs = SecondAnswer
+print("x1 = ", FirstAnswer,  "\nx2 = ", SecondAnswer)
