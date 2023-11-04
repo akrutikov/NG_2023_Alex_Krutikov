@@ -15,5 +15,5 @@ print ("Discriminant = ", D)
 FirstAnswer = ((-b + cmath.sqrt(D)) / (2 * a))
 SecondAnswer = ((-b - cmath.sqrt(D)) / (2 * a))
 FirstAnswer = FirstAnswer.real
-xs = SecondAnswer
+SecondAnswer = SecondAnswer.real
 print("x1 = ", FirstAnswer,  "\nx2 = ", SecondAnswer)
