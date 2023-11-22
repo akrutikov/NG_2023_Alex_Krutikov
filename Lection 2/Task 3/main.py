@@ -3,13 +3,13 @@ count = 1
 PrimeNum = []
 
 while count <=  num:
-    i = 1
+    index = 1
     text = ""
     
-    while i <= count:
-        if count % i == 0:
-            text += str(i) + " "
-        i += 1
+    while index <= count:
+        if count % index == 0:
+            text += str(index) + " "
+        index += 1
     if count % 2 != 0 and count % 3 != 0:
         PrimeNum.append(count)
         
