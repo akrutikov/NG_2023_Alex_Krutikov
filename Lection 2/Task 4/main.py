@@ -1,7 +1,7 @@
 text = input("Entrr your text: ")
 vowel = "AEIOUYaeiouy"
 letter = []
-for i in text:
-    if i in vowel:
-        letter.append(i)
+for index in text:
+    if index in vowel:
+        letter.append(index)
 print(letter)
