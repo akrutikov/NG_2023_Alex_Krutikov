@@ -1,13 +1,10 @@
-element = input("Enter any elements: ")
-number = "1234567890"
+element = input("Enter any elements: ").split(" ")
 values = []
 counter = 0
 
 for index in element:
-    if index in number:
+    if index.isdigit():
         values.append(index)
         counter += 1
             
-print("=" * 30)            
-print("Your numbers: ", values)
-print("Number of digits entered: ", counter)
+print("The numbers that you wrote: ", values, "\nNumber of digits entered: ", counter)
